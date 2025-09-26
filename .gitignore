@@ -44,4 +44,6 @@ next-env.d.ts
 
 
 # my learnings
-notes
+notes*
+# clerk configuration (can include secrets)
+/.clerk/
