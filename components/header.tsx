@@ -2,7 +2,7 @@ import { checkUser } from "@/lib/checkUser";
 import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
 import Link from "next/link";
 
-export default async function MainHeader() {
+export default async function Header() {
   const user = await checkUser();
 
   console.log("Current User:", user);
