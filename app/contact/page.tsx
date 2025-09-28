@@ -1,4 +1,30 @@
+"use client";
+
+import { redirect } from "next/navigation";
+import { useRef } from "react";
+
 export default function ContactPage() {
+  const formRef = useRef<HTMLFormElement>(null);
+
+  function handleContactMessage(event: React.FormEvent) {
+    event.preventDefault();
+
+    const formData = new FormData(formRef.current!);
+
+    const name = formData.get("name") as string;
+    const email = formData.get("email") as string;
+    const message = formData.get("message") as string;
+
+    const mailTo = `mailto:vahab.afsharian94@gmail.com?subject=Message from ${encodeURIComponent(
+      name,
+    )}&body=From: ${encodeURIComponent(email)}%0A%0A${encodeURIComponent(
+      message,
+    )}`;
+
+    window.location.href = mailTo;
+
+    redirect("/");
+  }
   return (
     <div className="bg-gray-100 font-sans text-gray-800">
       {/* Hero section */}
@@ -14,7 +40,11 @@ export default function ContactPage() {
       {/* Contact Form */}
       <section className="py16 bg-white px-8">
         <h2 className="mb-8 text-center text-3xl font-bold">Get in Touch</h2>
-        <form action="" className="mx-auto max-w-3xl space-y-6">
+        <form
+          onSubmit={handleContactMessage}
+          ref={formRef}
+          className="mx-auto max-w-3xl space-y-6"
+        >
           <div>
             <label
               htmlFor="name"
