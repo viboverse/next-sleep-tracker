@@ -9,7 +9,7 @@ export default async function Header() {
 
   return (
     <nav>
-      <div className="mx-auto max-w-7xl border-b-2 border-gray-200 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl border-b-2 border-gray-200 px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
             <Link href="/" className="flex-shrink-0">
