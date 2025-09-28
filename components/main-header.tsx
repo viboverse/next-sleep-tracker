@@ -27,6 +27,12 @@ export default async function MainHeader() {
               Home
             </Link>
             <Link
+              href="/contact"
+              className="hidden rounded-md px-2 py-1 text-sm font-medium text-gray-700 hover:text-purple-600 sm:block sm:px-3 sm:py-2 sm:text-base"
+            >
+              Contact
+            </Link>
+            <Link
               href="/about"
               className="hidden rounded-md px-2 py-1 text-sm font-medium text-gray-700 hover:text-purple-600 sm:block sm:px-3 sm:py-2 sm:text-base"
             >
