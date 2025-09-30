@@ -155,10 +155,17 @@ export default function AddNewRecord() {
 
           {/* Submit button */}
           <button
-            type="submit"
-            className="flex w-full cursor-pointer items-center justify-center rounded-md bg-indigo-600 px-4 py-2 font-medium text-white shadow-lg duration-100 ease-in hover:scale-105 hover:bg-indigo-800"
+            disabled={loading}
+            className="flex w-full cursor-pointer items-center justify-center rounded-md bg-indigo-600 px-4 py-2 font-medium text-white shadow-lg duration-100 ease-in hover:scale-105 hover:bg-indigo-800 disabled:cursor-not-allowed disabled:opacity-50"
           >
-            Submit
+            {loading ? (
+              <>
+                <div className="mr-2 h-4 w-4 animate-spin rounded-full border-2 border-white border-t-transparent"></div>
+                Submitting...
+              </>
+            ) : (
+              "Submit"
+            )}
           </button>
 
           {/* Status Of Form */}
