@@ -1,6 +1,7 @@
 import AddNewRecord from "@/components/add-new-record";
 import Guest from "@/components/guest";
 import RecordChart from "@/components/record-chart";
+import UserAverageRecord from "@/components/user-avarage-record";
 import { currentUser } from "@clerk/nextjs/server";
 import Image from "next/image";
 
@@ -57,8 +58,9 @@ export default async function HomePage() {
         </div>
 
         {/* Right Column */}
-        <div>
+        <div className="space-y-6">
           <RecordChart />
+          <UserAverageRecord />
         </div>
       </div>
     </main>
