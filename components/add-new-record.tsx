@@ -67,6 +67,7 @@ export default function AddNewRecord() {
       }
     } catch (err) {
       setLoading(false);
+      console.log(`Can not add record! Error: ${err}`);
       setMessage({ type: "error", text: "An unexpected error occurred" });
     }
   }
