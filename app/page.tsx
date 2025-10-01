@@ -29,7 +29,7 @@ export default async function HomePage() {
 
             {/* User Details */}
             <div className="flex-1">
-              <h2 className="mb-2 text-2xl font-bold text-purple-600 md:text-3xl">
+              <h2 className="mb-2 text-2xl font-bold text-orange-500 md:text-3xl">
                 Welcome back {user.firstName}
               </h2>
               <p className="mb-4 text-gray-600">

@@ -73,7 +73,7 @@ export default function AddNewRecord() {
   return (
     <section className="rounded-lg bg-white shadow-lg">
       <div className="flex w-full flex-col items-center justify-center p-8">
-        <h3 className="mb-6 text-center text-2xl font-bold text-indigo-600">
+        <h3 className="mb-6 text-center text-2xl font-bold text-blue-600">
           Track Your Sleep
         </h3>
         <form onSubmit={handleSubmit} ref={formRef}>
