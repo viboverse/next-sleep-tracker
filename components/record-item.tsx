@@ -14,7 +14,7 @@ export default function RecordItem({ record }: { record: Record }) {
 
   return (
     <li
-      className={`mb-4 flex items-center justify-between rounded-lg border-t border-t-gray-100 bg-white p-4 shadow-md ${
+      className={`mb-4 flex items-center justify-between rounded-lg border-t border-t-gray-300 bg-white p-4 shadow-lg ${
         record?.amount < 7
           ? "border-l-4 border-red-500"
           : "border-l-4 border-green-500"
@@ -35,7 +35,7 @@ export default function RecordItem({ record }: { record: Record }) {
       <button
         onClick={() => handleDeleteItem(record.id)}
         disabled={isDeleting}
-        className={`group relative flex h-10 w-10 items-center justify-center rounded-full transition-all duration-200 ease-in-out ${
+        className={`group relative flex h-10 w-10 cursor-pointer items-center justify-center rounded-full transition-all duration-200 ease-in-out ${
           isDeleting
             ? "cursor-not-allowed bg-gray-100"
             : "bg-red-50 hover:bg-red-100 active:scale-95"

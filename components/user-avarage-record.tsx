@@ -19,7 +19,7 @@ export default async function UserAverageRecord() {
     return (
       <section className="flex items-center justify-center">
         <div className="w-full rounded-lg border border-gray-200 bg-gray-50 p-8 text-center shadow-lg">
-          <h4 className="mb-2 text-2xl font-bold text-gray-600">No Data</h4>
+          <h4 className="text-headings mb-2 text-2xl font-bold">No Data</h4>
           <p className="text-gray-500">
             Start tracking your sleep to see your average!
           </p>
@@ -35,7 +35,7 @@ export default async function UserAverageRecord() {
   return (
     <section className="flex items-center justify-center">
       <div className="w-full rounded-lg bg-white p-8 text-center shadow-lg">
-        <h4 className="mb-6 text-2xl font-bold text-emerald-600">
+        <h4 className="text-headings mb-6 text-2xl font-bold">
           Your Average Sleep
         </h4>
         <h1 className="text-2xl font-bold text-orange-400 sm:text-3xl">

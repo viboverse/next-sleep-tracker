@@ -29,17 +29,19 @@ export default function ContactPage() {
     <div className="bg-gray-100 font-sans text-gray-800">
       {/* Hero section */}
       <section className="flex flex-col items-center justify-center bg-gray-100 px-8 py-16 text-center">
-        <h1 className="mb-4 text-4xl font-bold text-indigo-500 md:text-5xl">
+        <h1 className="text-headings mb-4 text-4xl font-bold md:text-5xl">
           Contact SleepTracker
         </h1>
-        <p className="text-lg text-pink-600 md:text-xl">
+        <p className="text-amethyst-500 text-lg md:text-xl">
           Have questions or need help? Get in touch with us!
         </p>
       </section>
 
       {/* Contact Form */}
-      <section className="py16 bg-white px-8">
-        <h2 className="mb-8 text-center text-3xl font-bold">Get in Touch</h2>
+      <section className="bg-white px-8 py-16">
+        <h2 className="mb-8 text-center text-3xl font-bold text-blue-800">
+          Get in Touch
+        </h2>
         <form
           onSubmit={handleContactMessage}
           ref={formRef}
@@ -94,7 +96,7 @@ export default function ContactPage() {
             />
           </div>
 
-          <button className="w-full cursor-pointer rounded-md bg-blue-600 px-4 py-2 font-medium text-white shadow-lg transition hover:bg-blue-800">
+          <button className="bg-amethyst-800 hover:bg-amethyst-900 w-full cursor-pointer rounded-md px-4 py-2 font-medium text-white shadow-lg transition">
             Send Message
           </button>
         </form>

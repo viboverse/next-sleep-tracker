@@ -16,7 +16,7 @@ export default async function RecordHistory() {
     return (
       <section className="flex items-center justify-center bg-gray-100 p-8">
         <div className="w-full rounded-lg bg-white p-8 text-center shadow-lg">
-          <h3 className="mb-4 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 bg-clip-text text-2xl font-bold text-transparent">
+          <h3 className="text-headings mb-4 text-2xl font-bold">
             No Sleep Records Found
           </h3>
           <p className="text-gray-600">
@@ -30,7 +30,7 @@ export default async function RecordHistory() {
   return (
     <section className="p-6">
       <div className="mx-auto rounded-lg bg-white p-8 shadow-lg">
-        <h3 className="mb-6 border-b border-gray-200 pb-6 text-center text-2xl font-bold">
+        <h3 className="text-headings mb-6 border-b border-gray-200 pb-6 text-center text-2xl font-bold">
           Sleep Record History
         </h3>
         <ul className="space-y-4">

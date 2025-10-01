@@ -8,7 +8,7 @@ export default function Guest() {
       {/* Hero section */}
       <section className="flex flex-col items-center justify-between border-b-2 border-gray-300 bg-gray-100 p-3 pt-20 md:flex-row md:p-16">
         <div className="mb-8 flex-1 xl:pl-10">
-          <h1 className="mb-4 text-2xl font-bold text-indigo-600">
+          <h1 className="text-headings mb-4 text-2xl font-bold">
             Welcome to Sleep Tracker
           </h1>
           <p className="mb-6 md:text-lg">
@@ -19,7 +19,7 @@ export default function Guest() {
           </p>
 
           <SignInButton>
-            <button className="w-full max-w-2xl cursor-pointer rounded-md bg-indigo-600 px-6 py-3 font-medium text-white transition hover:scale-105 hover:bg-indigo-800 md:w-auto">
+            <button className="bg-amethyst-600 hover:bg-amethyst-800 w-full max-w-2xl cursor-pointer rounded-md px-6 py-3 font-medium text-white transition hover:scale-105 md:w-auto">
               Start Tracking Now
             </button>
           </SignInButton>

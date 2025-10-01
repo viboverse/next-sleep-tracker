@@ -73,7 +73,7 @@ export default function AddNewRecord() {
   return (
     <section className="rounded-lg bg-white shadow-lg">
       <div className="flex w-full flex-col items-center justify-center p-8">
-        <h3 className="mb-6 text-center text-2xl font-bold text-blue-600">
+        <h3 className="text-headings mb-6 text-center text-2xl font-bold">
           Track Your Sleep
         </h3>
         <form onSubmit={handleSubmit} ref={formRef}>
@@ -160,7 +160,7 @@ export default function AddNewRecord() {
           {/* Submit button */}
           <button
             disabled={loading}
-            className="flex w-full cursor-pointer items-center justify-center rounded-md bg-indigo-600 px-4 py-2 font-medium text-white shadow-lg duration-100 ease-in hover:scale-105 hover:bg-indigo-800 disabled:cursor-not-allowed disabled:opacity-50"
+            className="bg-amethyst-700 hover:bg-amethyst-900 flex w-full cursor-pointer items-center justify-center rounded-md px-4 py-2 font-medium text-white shadow-lg duration-100 ease-in hover:scale-105 disabled:cursor-not-allowed disabled:opacity-50"
           >
             {loading ? (
               <>

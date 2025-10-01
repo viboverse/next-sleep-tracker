@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="flex flex-col items-center justify-between md:flex-row">
           {/* Logo */}
           <div className="mb-4 text-center md:mb-0 md:text-left">
-            <h2 className="bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 bg-clip-text text-lg font-bold text-transparent">
+            <h2 className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-lg font-bold text-transparent">
               SleepTracker
             </h2>
             <p className="text-sm text-gray-600">

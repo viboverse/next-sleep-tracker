@@ -13,7 +13,7 @@ export default async function Header() {
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
             <Link href="/" className="flex-shrink-0">
-              <span className="bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 bg-clip-text font-bold text-transparent sm:text-2xl">
+              <span className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text font-bold text-transparent sm:text-2xl">
                 Sleep Tracker
               </span>
             </Link>
@@ -41,7 +41,7 @@ export default async function Header() {
 
             <SignedOut>
               <SignInButton>
-                <button className="w-full cursor-pointer rounded-md bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 px-3 py-1 font-medium text-white hover:from-purple-600 hover:via-pink-600 hover:to-red-600 sm:w-auto sm:px-4 sm:py-2">
+                <button className="w-full cursor-pointer rounded-md bg-gradient-to-r from-blue-500 to-purple-500 px-3 py-1 font-medium text-white hover:from-purple-600 hover:via-pink-600 hover:to-red-600 sm:w-auto sm:px-4 sm:py-2">
                   Sign In
                 </button>
               </SignInButton>

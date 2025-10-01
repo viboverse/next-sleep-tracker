@@ -10,6 +10,19 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --color-headings: var(--color-amethyst-700);
+
+  --color-amethyst-50: #fbf7fd;
+  --color-amethyst-100: #f4ecfb;
+  --color-amethyst-200: #ebddf7;
+  --color-amethyst-300: #dcc2f0;
+  --color-amethyst-400: #c79ae6;
+  --color-amethyst-500: #a965d5;
+  --color-amethyst-600: #9c55c8;
+  --color-amethyst-700: #8642ae;
+  --color-amethyst-800: #713a8f;
+  --color-amethyst-900: #5c3073;
+  --color-amethyst-950: #3f1853;
 }
 
 @media (prefers-color-scheme: white) {

@@ -5,7 +5,7 @@ export default function AboutPage() {
     <div className="bg-gray-100 font-sans text-gray-800">
       {/* Hero Section */}
       <section className="flex flex-col items-center justify-center bg-gray-100 px-8 py-16 text-center">
-        <h1 className="mb-4 text-4xl font-bold text-indigo-500 md:text-5xl">
+        <h1 className="text-headings mb-4 text-4xl font-bold md:text-5xl">
           About Sleep Tracker
         </h1>
         <p className="text-lg md:text-xl">
@@ -26,7 +26,7 @@ export default function AboutPage() {
 
       {/* Features  Section */}
       <section className="bg-gray-100 px-8 py-16">
-        <h2 className="mb-8 text-center text-3xl font-bold">
+        <h2 className="mb-8 text-center text-3xl font-bold text-blue-800">
           Why Choose SleepTracker?
         </h2>
 

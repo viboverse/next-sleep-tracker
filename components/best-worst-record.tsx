@@ -18,7 +18,7 @@ export default async function BestWorstRecord() {
     return (
       <section className="flex items-center justify-center">
         <div className="w-full rounded-lg border border-gray-200 bg-gray-50 p-8 text-center shadow-lg">
-          <h4 className="mb-2 text-2xl font-bold text-gray-600">No Data</h4>
+          <h4 className="text-headings mb-2 text-2xl font-bold">No Data</h4>
           <p className="text-gray-500">
             Start tracking your sleep to see your best and worst records!
           </p>
@@ -30,7 +30,7 @@ export default async function BestWorstRecord() {
   return (
     <section className="flex items-center justify-center">
       <div className="w-full rounded-lg bg-white p-8 shadow-lg">
-        <h4 className="mb-6 text-center text-2xl font-bold text-indigo-600">
+        <h4 className="text-headings mb-6 text-center text-2xl font-bold">
           Your Sleep Records
         </h4>
 

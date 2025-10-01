@@ -18,7 +18,7 @@ export default async function RecordChart() {
     return (
       <section className="flex items-center justify-center bg-indigo-50">
         <div className="w-full rounded-lg bg-white p-8 text-center shadow-lg">
-          <h3 className="mb-4 text-2xl font-bold text-indigo-500">
+          <h3 className="text-headings mb-4 text-2xl font-bold">
             No Sleep Records Found
           </h3>
           <p className="text-gray-500">
@@ -32,7 +32,7 @@ export default async function RecordChart() {
   return (
     <section className="flex items-center justify-center">
       <div className="w-full rounded-lg border border-indigo-100 bg-white p-8 shadow-lg">
-        <h3 className="mb-6 text-center text-2xl font-bold text-purple-600">
+        <h3 className="text-headings mb-6 text-center text-2xl font-bold">
           Your Sleep Records
         </h3>
         <BarChart
