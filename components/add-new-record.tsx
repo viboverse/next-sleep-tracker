@@ -17,16 +17,14 @@ type MessageProps = {
 const today = new Date().toISOString().split("T")[0];
 
 export default function AddNewRecord() {
+  const formRef = useRef<HTMLFormElement>(null);
+  const [loading, setLoading] = useState(false);
+  const [message, setMessage] = useState<MessageProps | null>(null);
   const [sleepData, setSleepData] = useState<AddNewRecordProps>({
     text: "",
     date: today,
     amount: 6,
   });
-
-  const formRef = useRef<HTMLFormElement>(null);
-
-  const [loading, setLoading] = useState(false);
-  const [message, setMessage] = useState<MessageProps | null>(null);
 
   function updatedateField(
     field: keyof AddNewRecordProps,
