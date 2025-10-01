@@ -2,6 +2,7 @@ import AddNewRecord from "@/components/add-new-record";
 import BestWorstRecord from "@/components/best-worst-record";
 import Guest from "@/components/guest";
 import RecordChart from "@/components/record-chart";
+import RecordHistory from "@/components/record-history";
 import UserAverageRecord from "@/components/user-avarage-record";
 import { currentUser } from "@clerk/nextjs/server";
 import Image from "next/image";
@@ -64,6 +65,11 @@ export default async function HomePage() {
           <UserAverageRecord />
           <BestWorstRecord />
         </div>
+      </div>
+
+      {/* Sleep History */}
+      <div className="mx-auto max-w-7xl">
+        <RecordHistory />
       </div>
     </main>
   );
