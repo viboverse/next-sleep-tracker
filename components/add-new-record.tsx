@@ -9,6 +9,11 @@ type AddNewRecordProps = {
   amount: number;
 };
 
+type MessageProps = {
+  type: "success" | "error";
+  text: string;
+};
+
 const today = new Date().toISOString().split("T")[0];
 
 export default function AddNewRecord() {
@@ -21,13 +26,14 @@ export default function AddNewRecord() {
   const formRef = useRef<HTMLFormElement>(null);
 
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
-  const [success, setSuccess] = useState(false);
+  const [message, setMessage] = useState<MessageProps | null>(null);
 
   function updatedateField(
     field: keyof AddNewRecordProps,
     value: string | number,
   ) {
+    setMessage(null);
+
     setSleepData((prevDate) => ({
       ...prevDate,
       [field]: value,
@@ -37,8 +43,7 @@ export default function AddNewRecord() {
   async function handleSubmit(event: React.FormEvent) {
     event.preventDefault();
     setLoading(true);
-    setError(null);
-    setSuccess(false);
+    setMessage(null);
 
     const formData = new FormData(formRef.current!);
 
@@ -50,7 +55,7 @@ export default function AddNewRecord() {
       setLoading(false);
 
       if (result.success) {
-        setSuccess(true);
+        setMessage({ type: "success", text: result.message });
         // Reset form on success
         setSleepData({
           text: "",
@@ -58,11 +63,11 @@ export default function AddNewRecord() {
           amount: 6,
         });
       } else {
-        setError(result.message);
+        setMessage({ type: "error", text: result.message });
       }
     } catch (err) {
       setLoading(false);
-      setError("An unexpected error occurred");
+      setMessage({ type: "error", text: "An unexpected error occurred" });
     }
   }
 
@@ -170,15 +175,20 @@ export default function AddNewRecord() {
 
           {/* Status Of Form */}
           <div className="mt-4 flex h-12 items-center justify-center">
-            {error && (
-              <div className="w-full rounded-md bg-red-100 p-3 text-center outline outline-red-400">
-                <p className="text-sm text-red-500">{error}</p>
-              </div>
-            )}
-            {success && (
-              <div className="w-full rounded-md bg-green-100 p-3 text-center outline outline-green-400">
-                <p className="text-sm text-green-500">
-                  The Record Added Successfully!
+            {message && (
+              <div
+                className={`rouned-md w-full p-3 text-center ${
+                  message.type === "error"
+                    ? "bg-red-100 outline outline-red-400"
+                    : "bg-green-100 outline outline-green-400"
+                }`}
+              >
+                <p
+                  className={`text-sm ${
+                    message.type === "error" ? "text-red-500" : "text-green-500"
+                  }`}
+                >
+                  {message.text}
                 </p>
               </div>
             )}
