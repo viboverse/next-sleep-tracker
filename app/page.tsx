@@ -1,4 +1,5 @@
 import AddNewRecord from "@/components/add-new-record";
+import BestWorstRecord from "@/components/best-worst-record";
 import Guest from "@/components/guest";
 import RecordChart from "@/components/record-chart";
 import UserAverageRecord from "@/components/user-avarage-record";
@@ -61,6 +62,7 @@ export default async function HomePage() {
         <div className="space-y-6">
           <RecordChart />
           <UserAverageRecord />
+          <BestWorstRecord />
         </div>
       </div>
     </main>
