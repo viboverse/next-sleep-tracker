@@ -1,36 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌙 Sleep Tracker
 
-## Getting Started
+A modern, full-stack sleep tracking application built with Next.js, React, and TypeScript. Track your sleep patterns, analyze trends, and improve your rest quality with an intuitive interface.
 
-First, run the development server:
+## 🚀 Live Demo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+[Live Demo Link](https://next-sleep-tracker-omega.vercel.app/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+![Next.js](https://img.shields.io/badge/Next.js-15.5.4-black?style=for-the-badge&logo=next.js)
+![React](https://img.shields.io/badge/React-19.1.0-61DAFB?style=for-the-badge&logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-38B2AC?style=for-the-badge&logo=tailwind-css)
+![Prisma](https://img.shields.io/badge/Prisma-6.16.2-2D3748?style=for-the-badge&logo=prisma)
+![Neon](https://img.shields.io/badge/Neon-PostgreSQL-00D9FF?style=for-the-badge&logo=postgresql)
+![Clerk](https://img.shields.io/badge/Clerk-Auth-6C47FF?style=for-the-badge)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Core Technologies
 
-## Learn More
+- **Frontend**: Next.js 15.0.3, React 18, TypeScript
+- **Styling**: Tailwind CSS 3.4
+- **Database**: Neon PostgreSQL with Prisma 6.16.2 ORM
+- **Authentication**: Clerk
+- **Deployment**: Vercel
 
-To learn more about Next.js, take a look at the following resources:
+## ✨ Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- 🔐 **Secure Authentication** - User login/signup with Clerk
+- 📝 **Sleep Logging** - Record sleep quality, duration, and date
+- 📊 **Analytics Dashboard** - Visual charts of sleep patterns
+- 📈 **Progress Tracking** - Best/worst sleep records and averages
+- 📱 **Responsive Design** - Works seamlessly on all devices
+- 🗃️ **Data Management** - Full CRUD operations for sleep records
+- 🎨 **Modern UI/UX** - Clean interface with gradient designs
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🏗️ Architecture
 
-## Deploy on Vercel
+### Frontend Architecture
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **App Router** - Next.js 13+ app directory structure
+- **Server Components** - For data fetching and static content
+- **Client Components** - For interactive UI elements
+- **Server Actions** - For form submissions and database operations
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm or yarn
+- Neon PostgreSQL database
+- Clerk account for authentication
+
+### Installation
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/viboverse/next-sleep-tracker.git
+   cd next-sleep-tracker
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Set up environment variables**
+
+   ```env
+   # Database
+   DATABASE_URL="postgresql://username:password@host/database?sslmode=require"
+
+   # Clerk Authentication
+   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_...
+   CLERK_SECRET_KEY=sk_test_...
+   NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+   NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+   NEXT_PUBLIC_CLERK_SIGN_IN_FALLBACK_REDIRECT_URL=/
+   NEXT_PUBLIC_CLERK_SIGN_UP_FALLBACK_REDIRECT_URL=/
+   NEXT_PUBLIC_CLERK_SIGN_OUT_FALLBACK_REDIRECT_URL=/
+   ```
+
+4. **Set up the database**
+
+   ```bash
+   npx prisma generate
+   npx prisma db push
+   ```
+
+5. **Run the development server**
+
+   ```bash
+   npm run dev
+   ```
+
+6. **Open [http://localhost:3000](http://localhost:3000)**
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
