@@ -1,11 +1,3 @@
-# 🌙 Sleep Tracker
-
-A modern, full-stack sleep tracking application built with Next.js, React, and TypeScript. Track your sleep patterns, analyze trends, and improve your rest quality with an intuitive interface.
-
-## 🚀 Live Demo
-
-[Live Demo Link](https://next-sleep-tracker-omega.vercel.app/)
-
 ## 🛠️ Tech Stack
 
 ![Next.js](https://img.shields.io/badge/Next.js-15.5.4-black?style=for-the-badge&logo=next.js)
@@ -15,6 +7,14 @@ A modern, full-stack sleep tracking application built with Next.js, React, and T
 ![Prisma](https://img.shields.io/badge/Prisma-6.16.2-2D3748?style=for-the-badge&logo=prisma)
 ![Neon](https://img.shields.io/badge/Neon-PostgreSQL-00D9FF?style=for-the-badge&logo=postgresql)
 ![Clerk](https://img.shields.io/badge/Clerk-Auth-6C47FF?style=for-the-badge)
+
+# 🌙 Sleep Tracker
+
+A modern, full-stack sleep tracking application built with Next.js, React, and TypeScript. Track your sleep patterns, analyze trends, and improve your rest quality with an intuitive interface.
+
+## 🚀 Live Demo
+
+[Live Demo Link](https://next-sleep-tracker-omega.vercel.app/)
 
 ### Core Technologies
 
