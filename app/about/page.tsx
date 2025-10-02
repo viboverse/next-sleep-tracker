@@ -17,10 +17,11 @@ export default function AboutPage() {
       <section className="bg-white px-8 py-16">
         <h2 className="mb-8 text-center text-3xl font-bold">Our Mission</h2>
         <p className="mx-auto max-w-3xl text-center text-gray-600">
-          At SleepTracker, we aim to help individuals achieve better sleep and
-          overall well-being by providing insights into their sleep patterns.
-          Better sleep leads to a healthier, happier life, and we’re here to
-          guide you every step of the way.
+          At SleepTracker, our mission is to empower everyone to understand and
+          improve their sleep. We believe that quality rest is the foundation
+          for a healthy mind and body. By making sleep tracking simple and
+          insightful, we help you build better habits and wake up refreshed
+          every day.
         </p>
       </section>
 
@@ -32,23 +33,26 @@ export default function AboutPage() {
 
         <div className="mx-auto grid max-w-4xl grid-cols-1 gap-8 md:grid-cols-3">
           <div className="rounded-md bg-white p-6 shadow-lg">
-            <h3 className="mb-2 text-xl font-bold">Comprehensive Tracking</h3>
+            <h3 className="mb-2 text-xl font-bold">Easy Sleep Logging</h3>
             <p className="text-gray-600">
-              Monitor your sleep patterns and identify areas for improvement.
+              Quickly record your sleep each night with just a few taps—no
+              complicated setup required.
             </p>
           </div>
 
           <div className="rounded-md bg-white p-6 shadow-lg">
-            <h3 className="mb-2 text-xl font-bold">Personalized Insights</h3>
+            <h3 className="mb-2 text-xl font-bold">Smart Analytics</h3>
             <p className="text-gray-600">
-              Receive tailored recommendations to enhance your sleep quality.
+              Instantly see trends and patterns in your sleep, so you know
+              what’s working and what needs improvement.
             </p>
           </div>
 
           <div className="rounded-md bg-white p-6 shadow-lg">
-            <h3 className="mb-2 text-xl font-bold">User-Friendly Design</h3>
+            <h3 className="mb-2 text-xl font-bold">Privacy First</h3>
             <p className="text-gray-600">
-              Enjoy an intuitive and seamless experience across all devices.
+              Your sleep data is yours alone. We use strong encryption and never
+              share your information.
             </p>
           </div>
         </div>
@@ -58,11 +62,10 @@ export default function AboutPage() {
       <section className="bg-white px-8 py-16">
         <h2 className="mb-8 text-center text-3xl font-bold">Our Story</h2>
         <p className="mx-auto max-w-3xl text-center text-gray-600">
-          SleepTracker was created to address the growing need for better sleep
-          management tools. Our team of sleep experts and technologists
-          developed a platform that combines cutting-edge technology with
-          actionable insights. Since our launch, we&apos;ve helped countless
-          users achieve better sleep and improve their overall health.
+          SleepTracker started because we wanted an easy way to improve our
+          sleep. After struggling with restless nights, we built a simple tool
+          to track sleep and see what helps. Now, SleepTracker helps people
+          everywhere get better rest and feel healthier.
         </p>
       </section>
 

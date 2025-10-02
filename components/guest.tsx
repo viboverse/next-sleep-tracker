@@ -101,25 +101,30 @@ export default function Guest() {
         <div className="mx-auto max-w-3xl space-y-8">
           <div>
             <h3 className="text-xl font-bold">What is Sleep Tracker?</h3>
-            <p className="text-gray-600">
+            <p className="text-gray-600 italic">
               SleepTracker is a powerful tool designed to help you monitor your
               sleep patterns and improve your overall health.
             </p>
           </div>
 
           <div>
-            <h3 className="text-xl font-bold">How does it work?</h3>
-            <p className="text-gray-600">
-              SleepTracker analyzes your sleep data and provides personalized
-              insights to help you achieve better sleep.
+            <h3 className="text-xl font-bold">
+              How do I start tracking my sleep with SleepTracker?
+            </h3>
+            <p className="text-gray-600 italic">
+              Simply sign up, log in, and enter your sleep data each morning.
+              SleepTracker will automatically analyze your patterns and show
+              your progress.
             </p>
           </div>
 
           <div>
-            <h3 className="text-xl font-bold">Is SleepTracker free?</h3>
-            <p className="text-gray-600">
-              Yes, SleepTracker offers a free plan with basic features. Premium
-              plans are available for advanced insights and analytics.
+            <h3 className="text-xl font-bold">
+              Can I use SleepTracker on my phone or tablet?
+            </h3>
+            <p className="text-gray-600 italic">
+              Absolutely. SleepTracker works great on all devices—just open it
+              in your browser and start tracking!
             </p>
           </div>
         </div>
