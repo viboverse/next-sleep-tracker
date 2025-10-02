@@ -18,8 +18,8 @@ A modern, full-stack sleep tracking application built with Next.js, React, and T
 
 ### Core Technologies
 
-- **Frontend**: Next.js 15.0.3, React 18, TypeScript
-- **Styling**: Tailwind CSS 3.4
+- **Frontend**: Next.js 15 , React 19, TypeScript
+- **Styling**: Tailwind CSS 4
 - **Database**: Neon PostgreSQL with Prisma 6.16.2 ORM
 - **Authentication**: Clerk
 - **Deployment**: Vercel
